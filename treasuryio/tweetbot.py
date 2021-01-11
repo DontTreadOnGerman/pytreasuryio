@@ -4,7 +4,7 @@ from datetime import datetime
 
 import tweepy
 
-from query import query
+from .query import query
 
 def _connect_to_twitter(config = os.path.expanduser("~/.twitter.yml")):
     conf = yaml.safe_load(open(config))
